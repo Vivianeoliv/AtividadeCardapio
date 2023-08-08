@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anny's Cokies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         body {/*Icones do canto*/
+            position: relative;
+            margin: 0;
+            padding: 0;
+            color: #da4f9bf5;
+        }
+        
+        .icons-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .icons-container i {
+            font-size: 24px;
+            color: #da4f9bf5;
+            
+        }
+        /* Estilos para o botão */
+        .styled-button {
+            background-color: #da4f9bf5;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: #ff0000 0.3s ease;
+            font-weight: bold;
+        }
+        .cursive-text {
+            font-family: 'Lobster', cursive;
+        }
+        /* muda o ponteiro quando passa sobre um link */
+        a:hover {
+            cursor: pointer; /* Muda o ponteiro para uma mãozinha */
+            color: red; /* Muda a cor do texto ao passar o mouse */
+        }
+
+        /* muda o ponteiro quando passa sobre um botão */
+        button:hover {
+            cursor: pointer; /* Muda o ponteiro para uma mãozinha */
+            background-color: rgb(236, 220, 232); /* Muda a cor do botão ao passar o mouse */
+        }
+
+        /* Estiliza o ponteiro quando passa sobre as coisas */
+        .interactive:hover {
+            cursor: pointer; /* Muda o ponteiro para uma mãozinha */
+            border: 2px solid green; /* Adiciona uma borda verde ao elemento ao passar o mouse */
+        }
+            body {
+            font-family: Arial, sans-serif;/*Fonte do texto*/
+            text-align: center;/*Centraliza*/
+            margin: 0; /*Define a margem, 0 tira a margem*/
+            padding: 0;/*Define a espaçaento, 0 tira o espaçamento*/
+/*meu fundo*/  background-image: url("https://image.pollinations.ai/prompt/A%20black%20woman%20inside%20a%20cookie%20shop,%20owner,%20wearing%20pastry%20chef%20clothes,%20business,%20HD,%20retail.jpg");
+            background-size: cover; /* Ajusta o tamanho da imagem */
+            background-repeat: no-repeat; /* imagem não repete */
+
+        }
+        header {/* criar cabeçalho */
+            background-color: #e6d0d04b;/* cor de fundo do cabeçalho */
+            color: rgb(255, 255, 255);
+            padding: 10px;/* Espaçamento interno do cabeçalho */
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            background-color: #da4f9b;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category i {
+            margin-right: 10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc00;
+            box-shadow: 0 2px 4px rgba(146, 31, 31, 0.1);
+            font-weight: bold;
+        }
+        .product img {
+            max-width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo a Lojinha da Anny</h1>
+</header>
+<!-- Aqui está meu icone-->
+<div class="icons-container">
+    <button><i class="fas fa-shopping-cart"></i> </button>
+    <button><i class="fas fa-user"></i> </button>
+    <button><i class="fas fa-envelope"></i> </button>
+</div>
+<!--Aqui estão meus produtos-->
+<div class="category">
+    <h2><i class="fas fa-cookie"></i> Caseiros</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20chocolate%20sweet%20cookie,%20delicious,%20chocolate%20flavor,%20HD,%20food.jpg" alt="Biscoito Doce">
+            <p> Chocolatudo <button class="cursive-text"> Eu quero </button> </p>
+        </div>
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20milk%20sweet%20cookie,%20delicious,%20milk%20flavor,%20HD,%20food.jpg" alt="Biscoito De Leite">
+            <p>Famosinho de Leite <button class="cursive-text">Eu quero </button>
+        </div>
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20polvilho%20cookie,%20delicious,%20traditional,%20HD,%20food.jpg" alt="Biscoito Polvilho">
+            <p>Polvilho Doce <button class="cursive-text"> Eu quero </button></p>
+        </div>
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20corn%20sweet%20cookie,%20delicious,%20corn%20flavor,%20HD,%20food.jpg" alt="Biscoito De Milho">
+            <p>De Milho <button class="cursive-text"> Eu quero </button> </p>
+        </div>
+    </div>
+</div>
+
+<div class="category">
+    <h2><i class="fas fa-heart"></i> Queridinhos</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20pink%20unfilled%20mini%20donut,%20delicious,%20colorful,%20HD,%20food.jpg" alt="Donuts">
+            <p>Rosita <button class="cursive-text"> Eu quero </button></p>
+        </div>
+        <div class="product">
+            <img src=https://image.pollinations.ai/prompt/A%20yellow%20unfilled%20mini%20donut,%20delicious,%20colorful,%20HD,%20food.jpg" alt="Donuts">
+            <p>Raio de Sol <button class="cursive-text"> Eu quero </button> </p>
+        </div>
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20orange%20unfilled%20mini%20donut,%20delicious,%20colorful,%20HD,%20food.jpg" alt="Donuts">
+            <p>Meu Mac <button class="cursive-text"> Eu quero </button></p>
+            </div>    
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20colorful%20unfilled%20mini%20donut,%20delicious,%20colorful,%20HD,%20food.jpg" alt="Donuts">
+            <p>Rainbow <button class="cursive-text"> Eu quero </button></p>
+        </div> 
+    </div>
+</div>
+<!-- bloco de produtos categoria Caseiro, Goumert... -->
+<div class="category"> 
+    <h2><i class="fas fa-star"></i> Gourmet</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20normal%20croissant,%20delicious,%20French%20pastry,%20HD,%20food.jpg" alt="Recheados">
+            <p>Croissant Recheados <button class="cursive-text"> Eu quero muito </button></p>
+        </div>
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20filled%20donut,%20delicious,%20filled,%20HD,%20food.jpg" alt=" Recheados">
+            <p>Donuts Recheados <button class="cursive-text"> Eu quero muito </button></p>
+        </div><div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20filled%20polvilho%20biscuit,%20delicious,%20filled,%20HD,%20food.jpg" alt=" Recheados">
+            <p>Polvilho Recheados <button class="cursive-text"> Eu quero muito </button></p>
+        </div><div class="product">
+            <img src="https://image.pollinations.ai/prompt/A%20croissant-donut%20cookie%20stack,%20delicious,%20hybrid,%20HD,%20food.jpg" alt="Recheados">
+            <p>DonuCroiss Recheados <button class="cursive-text"> Eu quero muito </button></p>
+        </div>
+
+    </div>
+</div>
+
+<div class="category">
+    <h2><i class="fas fa-crown"></i> Especiais</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://image.pollinations.ai/prompt/Mini%20Brazilian%20savory%20snacks,%20delicious,%20mini,%20HD,%20food.jpg" alt="Medalhão Salgado">
+            <p>Medalhão Salgado <button class="cursive-text"> Me prova </button></p>
+        </div>
+    </div>
+</div>
+
+<div class="category">
+    <h2><i class="fas fa-paint-brush"> </i> Personalizados</h2>
+    <p><button class="styled-button">Solicite sua demanda especial aqui! <br> Clica em mim, lindeza</button></p>
+</div>
+
+</body>
+</html>
